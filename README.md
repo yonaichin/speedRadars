@@ -13,8 +13,9 @@
 
 This is simple RoR crawler project.
 
-Just run
+1. ```git clone https://github.com/yonaichin/speedRadars.git```
 
+2. ``` bundle & rails server ```
 
 
 
