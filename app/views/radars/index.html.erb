@@ -1,6 +1,4 @@
-<h2>
-    <%= @title%>
-</h2>
+<h2> <%= @title%></h2>
 <a class="btn btn-primary btn-sm" href="/radar">國道一號</a>
 <a class="btn btn-primary btn-sm" href="/radar/3">國道三號</a>
 <div class="container">
@@ -35,3 +33,25 @@
 
 
 </div>
+<div id="disclaimer" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">網站聲明</h4>
+      </div>
+      <div class="modal-body">
+        <%=image_tag("disclaimer.png", class: "img-responsive img-rounded") %>
+        <p>網站之資料來源版權歸屬於<a href="http://www.escortcat.com/">南極星</a>網站，若資料有誤請以南極星網站資料為主</p>
+        <p>此專案為運用簡易的爬蟲技術，欲查看原始碼請至 <a href="http://github.com/yonaichin/speedRadars">Github</a></p>
+        <div class="checkbox">
+          <label>
+            <input id="remember_me" type="checkbox"> 我不想再看到這篇帥氣的聲明
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="confirm" type="button" class="btn btn-default" data-dismiss="modal">確定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
